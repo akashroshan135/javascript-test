@@ -1,5 +1,14 @@
-const msg = "Hello World!!!";
+console.log("Hello World!!!");
 
-const x = "test program";
+const user = {
+    name: "Bob",
+    age: 25,
+    student: false,
+    langs: ["C", "C++", "Java"],
 
-console.log(`${msg}, This is a ${x}`);
+    printName: function () {
+        console.log(this.name);
+    },
+};
+
+user.printName();
